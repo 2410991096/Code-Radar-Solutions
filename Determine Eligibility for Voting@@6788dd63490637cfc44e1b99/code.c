@@ -4,7 +4,7 @@
 
 int main() {
     int a ;
-    sacnf("%d",&a);
+    scanf("%d",&a);
     if(a>18){
         printf("Eligible");
     }else{
