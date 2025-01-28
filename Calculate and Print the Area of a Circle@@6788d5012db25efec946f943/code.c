@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    flaot pi = 3.14;
+    const flaot pi = 3.14;
     float r ;
     scanf("%f",&r);
-    printf("Area: %.2f",pi*r*r);
+    printf("Area: %.2f\n",pi*r*r);
     return 0;
 }
