@@ -1,7 +1,4 @@
 #include <stdio.h>
-
-
-
 int main() {
     int a;
     scanf("%d"&a);
@@ -14,7 +11,7 @@ int main() {
     }else if(a>=60 && a<70){
         printf("D");
     }
-    else if (a<60){
+    else{
         printf("F");
     }
     return 0;
