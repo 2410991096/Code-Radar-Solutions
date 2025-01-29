@@ -8,5 +8,5 @@ int main(){
     }else{
         printf("Different Sign");
     }
-    retunr 0;
+    return 0;
 }
