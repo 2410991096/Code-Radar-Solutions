@@ -8,4 +8,5 @@ int main(){
     }else{
         printf("Above Freezing");
     }
+    return 0;
 }
