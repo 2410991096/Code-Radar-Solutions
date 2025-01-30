@@ -3,11 +3,11 @@
 int main(){
     char a;
     scanf("%c",&a);
-    if(c=='A'){
+    if(a=='A'){
         printf("Excellent");
-    }else if(c=='B'){printf("Good");}
-    else if(c=='C'){printf("Average");}
-    else if(c=='D'){printf("Below Average");}
-    else if(c=='F'){printf("Fail");}
+    }else if(a=='B'){printf("Good");}
+    else if(a=='C'){printf("Average");}
+    else if(a=='D'){printf("Below Average");}
+    else if(a=='F'){printf("Fail");}
     return 0;
 }
