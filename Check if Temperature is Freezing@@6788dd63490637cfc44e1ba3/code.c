@@ -1,11 +1,12 @@
-#include <stdio.h>
-
-int main(){
+#include<stdio.h>
+int main()
+{
     int a;
     scanf("%d",&a);
-    if(n<=0){
+    if(a<=0) {
         printf("Freezing");
-    }else{
+    }
+    else{
         printf("Above Freezing");
     }
     return 0;
