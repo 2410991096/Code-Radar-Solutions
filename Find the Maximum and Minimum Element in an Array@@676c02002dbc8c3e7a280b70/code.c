@@ -3,7 +3,7 @@
 int main() {
     int n, i;
 
-    printf("Enter the number of elements: ");
+   
     scanf("%d", &n);
 
     int arr[n];
@@ -25,8 +25,8 @@ int main() {
         }
     }
 
-    printf("Maximum element: %d\n", max);
-    printf("Minimum element: %d\n", min);
+    printf(" %d ", max);
+    printf(" %d", min);
 
     return 0;
 }
