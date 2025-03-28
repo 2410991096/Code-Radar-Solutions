@@ -30,7 +30,7 @@ int main() {
         }
     }
 
-    printf("%d\n",secondLargest);
+    printf("%d",secondLargest);
 
     return 0;
 }
