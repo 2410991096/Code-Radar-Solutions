@@ -1,27 +1,36 @@
-// Your code here...
-#include<stdio.h>
-int main(){
-    int i,n,max1,max2;
-    int arr[n];
-    scanf("%d",&n);
-    for(i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+#include <stdio.h>
+
+int main() {
+    int arr[100], n, i;
+    int largest, secondLargest;
+
+    
+    scanf("%d", &n);
+
+   
+    for(i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    if(arr[0]>arr[1]){
-        max1 = arr[0];
-        max2 = arr[1];
-    }else{
-        max1 = arr[1];
-        max2 = arr[0];
+
+    // Initialize
+    if(arr[0] > arr[1]) {
+        largest = arr[0];
+        secondLargest = arr[1];
+    } else {
+        largest = arr[1];
+        secondLargest = arr[0];
     }
-    for(i=2;i<n;i++){
-        if(arr[i]>max1){
-            max2=max1;
-            max1=arr[i];
-        }else if(arr[i]>max2 && arr[i]!=max1){
-            max2 = arr[i];
+
+    for(i = 2; i < n; i++) {
+        if(arr[i] > largest) {
+            secondLargest = largest;
+            largest = arr[i];
+        } else if(arr[i] > secondLargest && arr[i] != largest) {
+            secondLargest = arr[i];
         }
     }
-    printf("%d",max2);
+
+    printf("%d", secondLargest);
+
     return 0;
-    }
+}
