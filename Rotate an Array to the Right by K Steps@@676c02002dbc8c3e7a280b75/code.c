@@ -3,7 +3,7 @@
 int main(){
     int n , k , i;
     scanf("%d",&n);
-    int arr[n];rotated[n];
+    int arr[n],rotated[n];
     for(i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
