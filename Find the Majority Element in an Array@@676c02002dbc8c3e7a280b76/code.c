@@ -3,7 +3,8 @@
 int main(){
     int n ,i;
     int arr[n]; 
-    int count = 0; candidate = -1;
+    int count = 0;
+    int candidate = -1;
     scanf("%d",&n);
     for(i=0;i<n;i++){
     scanf("%d",&arr[i]);
