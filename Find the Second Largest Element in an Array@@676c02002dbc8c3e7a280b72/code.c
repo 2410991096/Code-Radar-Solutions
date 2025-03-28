@@ -1,7 +1,8 @@
 // Your code here...
 #include<stdio.h>
 int main(){
-    int arr[n],i,n,max1,max2;
+    int i,n,max1,max2;
+    int arr[n];
     scanf("%d",&n);
     for(i=0;i<n;i++){
         scanf("%d",&arr[i]);
