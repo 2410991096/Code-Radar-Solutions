@@ -33,11 +33,11 @@ int main() {
         arr[i] = rotated[i];
     }
 
-    printf("Array after right rotation by %d steps:\n", k);
+    
     for(i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
-    printf("\n");
+    
 
     return 0;
 }
