@@ -23,7 +23,7 @@ int main(){
         printf("%d",arr[i]);
 
     }
-    return o;
+    return 0;
 
     
 }
