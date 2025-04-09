@@ -1,36 +1,36 @@
 #include <stdio.h>
 
 int main() {
-    int arr[100], n, i;
-    int largest, secondLargest;
-
-    
+    int n, i;
+   
     scanf("%d", &n);
 
-   
-    for(i = 0; i < n; i++) {
+    int arr[100]; // assuming max size = 100
+ printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
-    // Initialize
-    if(arr[0] > arr[1]) {
-        largest = arr[0];
-        secondLargest = arr[1];
-    } else {
-        largest = arr[1];
-        secondLargest = arr[0];
-    }
+    // if (n < 2) {
+    //     printf("Need at least two elements to find the second largest.\n");
+    //     return 0;
+    // }
 
-    for(i = 2; i < n; i++) {
-        if(arr[i] > largest) {
-            secondLargest = largest;
-            largest = arr[i];
-        } else if(arr[i] > secondLargest && arr[i] != largest) {
-            secondLargest = arr[i];
+    int first = arr[0], second = -1e9; // initialize
+
+    // Find the largest and second largest
+    for (i = 1; i < n; i++) {
+        if (arr[i] > first) {
+            second = first;
+            first = arr[i];
+        } else if (arr[i] > second && arr[i] != first) {
+            second = arr[i];
         }
     }
 
-    printf("%d",secondLargest);
+    
+        printf("%d\n", second);
+    
 
     return 0;
 }
