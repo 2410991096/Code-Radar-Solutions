@@ -30,12 +30,12 @@ int main() {
         }
 
         if (isPrime) {
-            printf("%d ", num); // print the prime number
+             // print the prime number
             primeCount++;       // increment prime counter
         }
     }
 
-    printf("%d\n",primeCount);
+    printf("%d",primeCount);
 
     return 0;
 }
