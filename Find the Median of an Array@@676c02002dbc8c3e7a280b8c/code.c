@@ -25,7 +25,7 @@ int main(){
             int ans = arr[(n-1)/2];
             printf("%d",ans);
         }else{
-            int ans1 = arr[n/2] + arr[(n/2)-1];
+            int ans1 = (arr[n/2] + arr[(n/2)-1])/2;
             printf("%d",ans1);
         }
     }
