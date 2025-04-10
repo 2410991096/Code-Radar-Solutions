@@ -11,7 +11,7 @@ int main() {
         scanf("%d", &arr[i]);
 
         if (arr[i] % 2 == 0) {
-            if (maxEven == -1 || arr[i] > maxEven) {
+            if (arr[i] > maxEven) {
                 maxEven = arr[i];
             }
         }
