@@ -24,7 +24,7 @@ int main(){
             printf("%d",ans);
         }else{
             float ans1 = (arr[n/2] + arr[(n/2)-1])/2.0;
-            printf("%d",ans1);
+            printf("%f",ans1);
         }
     
 }
