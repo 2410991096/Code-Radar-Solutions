@@ -20,4 +20,13 @@ int main(){
     for(int i=0;i<n;i++){
         printf("%d",arr[i]);
     }
+    for(int i=0;i<n;++){
+        if((n-1)%2!=0){
+            int ans = arr[(n-1)/2];
+            printf("%d",ans);
+        }else{
+            int ans1 = arr[n/2] + arr[(n/2)-1];
+            printf("%d",ans1);
+        }
+    }
 }
