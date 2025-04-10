@@ -1,23 +1,23 @@
-// Your code here...
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int n;
-    int maxeven = -1;
-    scanf("%d",&n);
+    scanf("%d", &n);
+
     int arr[n];
-    for(int i=0;i<n;i++){
-    scanf("%d",&arr[i]);
-    }
-    
-    for(int i=0;i<n;i++){
-        if(arr[i]%2==0){
-            if(arr[i]>maxeven)
-            maxeven = arr[i];
-        }else{
-            printf("-1");
+    int maxEven = -1; // Initialize as -1 to handle "no even number" case
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+
+        if (arr[i] % 2 == 0) {
+            if (maxEven == -1 || arr[i] > maxEven) {
+                maxEven = arr[i];
+            }
         }
-       
-        
     }
 
+    printf("%d\n", maxEven);
+
+    return 0;
 }
