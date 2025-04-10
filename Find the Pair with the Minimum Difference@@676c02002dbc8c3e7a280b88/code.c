@@ -14,7 +14,7 @@ int main(){
         for(int j=i+1;j<n;j++){
            int diff = arr[i]-arr[j];
            if(diff<0) diff = -diff;
-            if (diff < minDiff) {
+            if (diff < mindiff) {
                 minDiff = diff;
                 a = arr[i];
                 b = arr[j];
