@@ -13,7 +13,7 @@ int main(){
     for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
            int diff = arr[i]-arr[j];
-           if(diff<0) diff = -diff;
+           
             if (diff < mindiff) {
                 mindiff = diff;
                 b = arr[i];
