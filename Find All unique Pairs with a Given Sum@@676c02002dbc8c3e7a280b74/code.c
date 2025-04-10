@@ -10,13 +10,14 @@ int main(){
     scanf("%d",&k);
     for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
-            if(arr[i]==arr[j] || arr[i]+arr[j]==k){
+            if(arr[i]==arr[j] && arr[i]+arr[j]==k){
                 printf("%d %d \n",arr[i],arr[j]);
                 break;
             }
-            // if(arr[i]+arr[j]==k){
-            //     printf("%d %d \n",arr[i],arr[j]);
-            // }
+            if(arr[i]+arr[j]==k){
+                printf("%d %d \n",arr[i],arr[j]);
+                break;
+            }
         }
     }
 }
