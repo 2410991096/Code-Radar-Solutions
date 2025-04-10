@@ -12,7 +12,7 @@ int main(){
         int sum = 0;
         while(arr[i]!=0){
             sum = sum + (arr[i]%10);
-            arr[i]/=10
+            arr[i]/=10;
         }
         printf("%d",arr[i]);
     }
